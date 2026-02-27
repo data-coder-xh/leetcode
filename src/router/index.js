@@ -11,7 +11,8 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  // 使用 Vite 的 BASE_URL（GitHub Pages 下为 /leetcode/）
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes,
 })
 
